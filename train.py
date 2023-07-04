@@ -12,4 +12,4 @@ for intent in intents['intents']:
     tag = intent['tags']
     tags.append(tag)
     for pattern in intents['pattern']:
-        w =
+        pass
