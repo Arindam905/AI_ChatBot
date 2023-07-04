@@ -1,3 +1,5 @@
 myenv/
+_pycache_/
 intents.json
 train.py
+data.pth
