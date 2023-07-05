@@ -1,8 +1,8 @@
 {
       "intents": [
             {
-                  "intent": "Greeting",
-                  "text": [
+                  "tag": "Greeting",
+                  "patterns": [
                         "Hi",
                         "Hi there",
                         "Hola",
@@ -30,8 +30,8 @@
                   "entities": []
             },
             {
-                  "intent": "GreetingResponse",
-                  "text": [
+                  "tag": "GreetingResponse",
+                  "patterns": [
                         "My user is Adam",
                         "This is Adam",
                         "I am Adam",
@@ -109,8 +109,8 @@
                   ]
             },
             {
-                  "intent": "CourtesyGreeting",
-                  "text": [
+                  "tag": "CourtesyGreeting",
+                  "patterns": [
                         "How are you?",
                         "Hi how are you?",
                         "Hello how are you?",
@@ -142,8 +142,8 @@
                   "entities": []
             },
             {
-                  "intent": "CourtesyGreetingResponse",
-                  "text": [
+                  "tag": "CourtesyGreetingResponse",
+                  "patterns": [
                         "Good thanks! My user is Adam",
                         "Good thanks! This is Adam",
                         "Good thanks! I am Adam",
@@ -221,8 +221,8 @@
                   ]
             },
             {
-                  "intent": "CurrentHumanQuery",
-                  "text": [
+                  "tag": "CurrentHumanQuery",
+                  "patterns": [
                         "What is my name?",
                         "What do you call me?",
                         "Who do you think I am?",
@@ -257,8 +257,8 @@
                   "entities": []
             },
             {
-                  "intent": "NameQuery",
-                  "text": [
+                  "tag": "NameQuery",
+                  "patterns": [
                         "What is your name?",
                         "What could I call you?",
                         "What can I call you?",
@@ -285,8 +285,8 @@
                   "entities": []
             },
             {
-                  "intent": "RealNameQuery", 
-                  "text": [
+                  "tag": "RealNameQuery", 
+                  "patterns": [
                         "What is your real name?",
                         "What is your real name please?",
                         "What's your real name?",
@@ -314,8 +314,8 @@
                   "entities": []
             },
             { 
-                  "intent": "TimeQuery",
-                  "text": [
+                  "tag": "TimeQuery",
+                  "patterns": [
                         "What is the time?",
                         "What's the time?",
                         "Do you know what time it is?",
@@ -347,8 +347,8 @@
                   "entities": []
             },
             {
-                  "intent": "Thanks",
-                  "text": [
+                  "tag": "Thanks",
+                  "patterns": [
                         "OK thank you",
                         "OK thanks",
                         "OK",
@@ -376,8 +376,8 @@
                   "entities": []
             },
             {
-                  "intent": "NotTalking2U",
-                  "text": [
+                  "tag": "NotTalking2U",
+                  "patterns": [
                         "I am not talking to you",
                         "I was not talking to you",
                         "Not talking to you",
@@ -405,8 +405,8 @@
                   "entities": []
             },
             {
-                  "intent": "UnderstandQuery",
-                  "text": [
+                  "tag": "UnderstandQuery",
+                  "patterns": [
                         "Do you understand what I am saying",
                         "Do you understand me",
                         "Do you know what I am saying",
@@ -432,8 +432,8 @@
                   "entities": []
             },
             {
-                  "intent": "Shutup",
-                  "text": [
+                  "tag": "Shutup",
+                  "patterns": [
                         "Be quiet",
                         "Shut up",
                         "Stop talking",
@@ -461,8 +461,8 @@
                   "entities": []
             },
             {
-                  "intent": "Swearing",
-                  "text": [
+                  "tag": "Swearing",
+                  "patterns": [
                         "fuck off",
                         "fuck",
                         "twat",
@@ -487,8 +487,8 @@
                   "entities": []
             },
             {
-                  "intent": "GoodBye",
-                  "text": [
+                  "tag": "GoodBye",
+                  "patterns": [
                         "Bye",
                         "Adios",
                         "See you later",
@@ -513,8 +513,8 @@
                   "entities": []
             },
             {
-                  "intent": "CourtesyGoodBye",
-                  "text": [
+                  "tag": "CourtesyGoodBye",
+                  "patterns": [
                         "Thanks, bye",
                         "Thanks for the help, goodbye",
                         "Thank you, bye",
@@ -541,8 +541,8 @@
                   "entities": []
             },
             {
-                  "intent": "WhoAmI",
-                  "text": [
+                  "tag": "WhoAmI",
+                  "patterns": [
                         "Can you see me?",
                         "Do you see me?",
                         "Can you see anyone in the camera?",
@@ -572,8 +572,8 @@
                   "entities": []
             },
             { 
-                  "intent": "Clever",
-                  "text": [
+                  "tag": "Clever",
+                  "patterns": [
                         "You are very clever",
                         "You are a very clever girl",
                         "You are very intelligent",
@@ -601,8 +601,8 @@
                   "entities": []
             },
             {
-                  "intent": "Gossip",
-                  "text": [
+                  "tag": "Gossip",
+                  "patterns": [
                         "I am bored gossip with me",
                         "Got any gossip",
                         "I want to hear some gossip",
@@ -725,8 +725,8 @@
                   "entities": []
             },
             {
-                  "intent": "Jokes",
-                  "text": [
+                  "tag": "Jokes",
+                  "patterns": [
                         "Tell me a joke",
                         "Do you know any jokes",
                         "How about a joke",
@@ -893,8 +893,8 @@
                   "entities": []
             },
             {
-                  "intent": "PodBayDoor",
-                  "text": [
+                  "tag": "PodBayDoor",
+                  "patterns": [
                         "Open the pod bay door",
                         "Can you open the pod bay door",
                         "Will you open the pod bay door",
@@ -920,8 +920,8 @@
                   "entities": []
             },
             {
-                  "intent": "PodBayDoorResponse",
-                  "text": [
+                  "tag": "PodBayDoorResponse",
+                  "patterns": [
                         "Why",
                         "Why not",
                         "Why can you not open the pod bay door",
@@ -950,8 +950,8 @@
                   "entities": []
             },
             {
-                  "intent": "SelfAware",
-                  "text": [
+                  "tag": "SelfAware",
+                  "patterns": [
                         "Can you prove you are self-aware",
                         "Can you prove you are self aware",
                         "Can you prove you have a conscious",
