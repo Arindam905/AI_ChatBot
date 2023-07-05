@@ -3,10 +3,44 @@ import json
 import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenizer
+import pyttsx3
+import speech_recognition as sr
+import datetime
+import pyaudio
+
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open("AI_ChatBot\intents.json", 'r') as f:
+engine = pyttsx3.init('sapi5')
+voices = engine.getProperty('voices') 
+engine.setProperty('voice', voices[0].id)
+def speak(audio):   
+    engine.say(audio)    
+    engine.runAndWait() 
+
+
+def takeCommand():
+     
+    r = sr.Recognizer()
+     
+    with sr.Microphone() as source:
+         
+        print("Listening...")
+        r.pause_threshold = 1
+        audio = r.listen(source)
+  
+    try:
+        print("Recognizing...")   
+        query = r.recognize_google(audio, language ='en-in')
+        print(f"User said: {query}\n")
+  
+    except Exception as e:
+        print(e)   
+        print("Unable to Recognize your voice.") 
+        return "None"
+    return query
+
+with open("starwarsintents.json", 'r') as f:
     intents = json.load(f)
 
 FILE = "data.pth"
@@ -28,7 +62,7 @@ bot_name = "Levi"
 print("Let's chat! (type 'quit' to exit)")
 while True:
     
-    sentence = input("You: ")
+    sentence = takeCommand()
     if sentence == "quit":
         break
 
@@ -48,5 +82,6 @@ while True:
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 print(f"{bot_name}: {random.choice(intent['responses'])}")
+                speak(random.choice(intent['responses']))
     else:
         print(f"{bot_name}: I do not understand...")
