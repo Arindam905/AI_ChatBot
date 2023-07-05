@@ -40,7 +40,7 @@ def takeCommand():
         return "None"
     return query
 
-with open("starwarsintents.json", 'r') as f:
+with open("AI_ChatBot\starwarsintents.json", 'r') as f:
     intents = json.load(f)
 
 FILE = "data.pth"
