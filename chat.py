@@ -5,7 +5,6 @@ from model import NeuralNet
 from nltk_utils import bag_of_words, tokenizer
 import pyttsx3
 import speech_recognition as sr
-import datetime
 import pyaudio
 
 
